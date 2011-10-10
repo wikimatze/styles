@@ -1,0 +1,41 @@
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstdefinelanguage{scala}{
+  morekeywords={enum struct, explicit,
+    for each, in, int, new, public, signed,
+    switch, signed, trait, throw, typename, unsigned,
+    value struct, abstract, break, char, continues,
+    else, finally, mutable, oberator, template, true,
+    typedef, void, while, case, class, delete, do, enum,
+    false, float, friend, generic, if, return, ref struct,
+    sizeof, this, try, val, volatile, array, bool, catch,
+    catch, const, default, double, enum class, for, goto,
+    inline, long, namespace, private, protected, short, static,
+    virtual},
+  otherkeywords={=>,<-,<\%,<:,>:,\#,@},
+  sensitive=true,
+  morecomment=[l]{//},
+  morecomment=[n]{/*}{*/},
+  morestring=[b]",
+  morestring=[b]',
+  morestring=[b]"""
+}
+
+\lstset{frame=tb,
+  language=scala,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  numbers=left,  
+  stepnumber=4,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+

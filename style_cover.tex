@@ -1,0 +1,31 @@
+\newcommand*{\titleTH}{\begingroup
+\raggedright
+\vspace*{\baselineskip}
+  \begin{tabular}{p{1cm}p{8cm}}
+  \textcolor{Dark}{\documentwordstext} & \documentwords \\
+  \textcolor{Dark}{\documentlinestext} & \documentlines \\
+  \end{tabular}
+{\Large \pdfauthor}\\[0.04\textheight]
+\raggedleft
+{\bfseries \motto}\\[\baselineskip] % motto of  the script
+{\textcolor{Medium}{\Huge \pdftitle}}\\[\baselineskip] % name of the script
+{Geschrieben am \today}\\[\baselineskip]
+{\small \tutor}\par
+{\tiny \disclaimer}\par
+
+\begin{figure}[H]
+  \centering
+  \scalebox{1.7}{\input{cover.pdftex_t}}
+\end{figure}\vfill
+
+{\Large \publisher}\par
+
+{\begingroup
+  \begin{tabular}{p{4.8cm}p{10cm}}
+  \textcolor{Dark}{\correctiontext:}  & \href{mailto:matthias.guenther@wikimatze.de}{matthias.guenther@wikimatze.de} \\
+  \textcolor{Dark}{\homepagetext:}    & \href{http://www.wikimatze.de}{wikimatze.de} \\
+  \textcolor{Dark}{\coverdisclaimer:} & \covercopyright \\
+  \end{tabular}
+\endgroup}
+\endgroup}
+

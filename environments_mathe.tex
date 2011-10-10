@@ -1,0 +1,64 @@
+\usepackage{amsmath} % needed for def-environment
+
+\newtheoremstyle{Satz}
+{21pt}      % upper space
+{11pt}      % lower space
+{\rmfamily} % textfont
+{0.3cm}     % intendation of the sentencesEinrückung
+{\bf}{:}    % font and symbol
+{0.1cm}     % space after the head
+{}          % head spec (can be left empty, meaning 'normal')
+
+\newtheoremstyle{Beweis}
+{0.5cm}
+{1cm}
+{\normalfont}
+{}
+{\normalfont\bfseries}
+{}
+{0.3cm}
+{}
+
+\theoremstyle{Satz}
+\newtheorem{Satz}{Satz}
+\theoremstyle{Beweis}
+\newtheorem*{Beweis}{Beweis}
+
+\newtheoremstyle{Definition}
+{21pt}
+{11pt}
+{\rmfamily}
+{0.3cm}
+{\bf}{:}
+{0.3cm}
+{}
+
+\theoremstyle{Definition}
+\newtheorem{Definition}{Definition}[section]
+
+\newcommand{\Defbox}[1]{\colorbox{nb}{%
+	\begin{minipage}{.98\columnwidth}{\sf #1 }\end{minipage}}
+}
+
+\newcommand{\Satzbox}[1]{\framebox{
+\begin{minipage}{.80\columnwidth}{\sf #1 }\end{minipage}}}
+
+
+\newenvironment{Def}[2]{\begin{Defbox}{\ab
+\begin{Definition}\underline{#1}\ab \\ #2\end{Definition}
+}\ab \ab
+\end{Defbox}}
+
+
+\newenvironment{Merksatz}[2]{\centering\begin{Satzbox}{\ab
+	\begin{Satz}\begin{minipage}{.75\columnwidth}{\textit{#1}}\end{minipage}\ab \\ #2\end{Satz}
+}\ab \ab
+\end{Satzbox}}
+
+
+\makeatletter
+\renewcommand*\env@matrix[1][c]{\hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{*\c@MaxMatrixCols #1}}
+\makeatother
+

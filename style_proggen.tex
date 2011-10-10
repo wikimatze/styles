@@ -1,0 +1,73 @@
+%% encoding
+\usepackage{ngerman}                % germany-settings
+\usepackage[utf8]{inputenc}         % Linux character format
+\usepackage{color}                  % to define own colors
+\definecolor{Dark}{gray}{.5}        % color for cover
+\definecolor{Medium}{gray}{.8}      % color for cover
+\definecolor{darkred}{rgb}{.5,0,0}  % color for links
+\definecolor{darkblue}{rgb}{0,0,.5} % color for links
+\definecolor{nb}{gray}{.95}         % color for Def environment
+\usepackage{url}                    % needed for hyperref and links in pdfs
+  \usepackage[plainpages=false,pdfpagelabels,colorlinks=true,urlcolor=darkblue,pagecolor=darkred,
+  citecolor=darkred,linkcolor=darkred]{hyperref} % setting how links are rendered
+
+
+%% formatting
+\parindent1pt                % first row of every chapter will be intended
+\columnsep1cm                % no clue
+\textwidth38.5em             % width of the text
+\textheight23cm              % line height
+\setcounter{secnumdepth}{10} % numbering all headings
+\setcounter{tocdepth}{4}     % beginning with numbering
+\setcounter{section}{0}      % beginning with the counting section
+
+
+%% various
+\usepackage[normalem]{ulem}                                 % uline
+\usepackage{array}                                          % for tabulars
+\usepackage{longtable}                                      % special tabulars
+\usepackage[labelfont=bf]{caption}                          % number of tables automatic bold
+\usepackage{csquotes}                                       % quoting technique, very special package with many options
+\usepackage{verbatim}                                       % for the \begin{comment}...\end{comment} environment
+\usepackage{fancybox}                                       % for the shadowbox
+\usepackage{graphicx}                                       % for graphics
+\usepackage{float}                                          % for positioning of figures
+\DeclareGraphicsRule{.pdftex}{pdf}{.pdftex}{}               % for xfig
+\usepackage{wrapfig}                                        % textumflossene Bilder
+\usepackage{caption}                                        % caption for images
+\usepackage[all]{xy}                                        % image numbering
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}} % numbering for figure environments
+\usepackage{pdfpages}                                       % needed for the environments
+\usepackage{amsthm}                                         % needed for defining theorem environments
+\usepackage{listings}                                       % sourcecode
+\usepackage[flushmargin,hang]{footmisc}                     % linebreaks in footnotes will cause no intendation
+\usepackage{relsize}                                        % scale the font-size relative
+\usepackage{paralist}                                       % own bullet-styling for lists
+\usepackage{rotating}                                       % for rotating images
+\usepackage{srcltx}                                         % forward/reverse search in dvi
+%\usepackage[strings]{underscore} % don't escape underscores
+
+%% layout
+\oddsidemargin = 24pt              % margin left
+\usepackage{relsize}               % relative font-scaling
+\usepackage{mathpazo}              % font-style
+\usepackage{fancyhdr, lastpage}    % Anpassung von Kolumnentitel
+\fancyhf{}                         % empty the header
+\renewcommand{\headrulewidth}{0pt} % width of separating line header
+\renewcommand{\footrulewidth}{0pt} % width of separating line footer
+\usepackage{picins}                % for floating images
+
+
+%% new commands
+\def\dash{-- }
+\def\bab{\vspace{0.3cm}}
+\def\ab{\vspace{0.2cm}}
+\newcommand{\itbf}[1]{\textbf{\textit{#1}}}
+\newcommand{\ulab}[1]{\ab \uline{#1}}
+\newcommand{\ulbf}[1]{\textbf{\uline{#1}}}
+\newcommand{\ulbfab}[1]{\ab \textbf{\uline{#1}}\ab}
+\def\und{u. }
+\def\oder{od. }
+\newcommand{\kreis}[1]{\textbf{\unitlength1ex\begin{picture}(2.5,2.5)%
+\put(0.75,0.75){\circle{2.5}}\put(0.75,0.75){\makebox(0,0){#1}}\end{picture}}}
+\newcommand{\frage}[1]{\textcolor{red}{#1\mbox{}\\}}
