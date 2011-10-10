@@ -1,1 +1,14 @@
-Here is a list of all my used latex styles I'm using in my projects.
+Here is a list of all my used LaTex styles I'm using in my projects.
+
+
+h2. Usage
+
+In you tex preamble you can use the styles in the following way:
+
+pre. % define the relative path to your
+\def\home{../../styles}
+% define documentclass according to home of your styles
+\input{\home/documentclass_normal_oneside}
+% generell-styling of the document
+\input{\home/style_proggen}
+
