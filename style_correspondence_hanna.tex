@@ -1,0 +1,52 @@
+\def\firstname{\pdfsurname}
+\def\familyname{\pdfname}
+
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = Hanna Schütt
+    pdftitle    = Anschreiben Hanna Schütt
+    pdfsubject  = Anschreiben Hanna Schütt,
+    pdfcreator  = \LaTeX,
+    pdfproducer = pdfTeX 3.1415926-1.40.10-2.2}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+
+\begin{document}
+\sffamily   % for use with a resume using sans serif fonts;
+%\rmfamily  % for use with a resume using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+{\bfseries \pdfauthor}\\[.35ex]
+\small\itshape%
+\pdfauthorstreet\\
+\pdfauthorplz \pdfauthorcity\\[.35ex]
+\Telefon~\pdfauthorphone\\
+\Letter~\href{mailto:\pdfauthoremail}{\pdfauthoremail}\\
+\end{minipage}\\[1em]
+%
+\begin{minipage}[t]{.4\textwidth}
+\raggedright%
+{\bfseries \receivername}\\[.35ex]
+\small\itshape%
+\receiverstreet\\
+\recievercity
+\end{minipage}
+\hfill % US style
+%\\[1em] % UK style
+\begin{minipage}[t]{.4\textwidth}
+\raggedleft % US style
+\pdfauthorcity, \createdate
+%April 6, 2006 % US informal style
+%05/04/2006 % UK formal style
+\end{minipage}\\[1.5em]
+\raggedright
+\nopagebreak
+

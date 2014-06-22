@@ -1,0 +1,31 @@
+%\moderncvtheme[blue]{casual} % optional argument are 'blue', 'orange', 'red', 'green', 'grey',
+% 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[grey]{classic}
+
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[scale=0.8]{geometry} % adjust the page margins
+%\setlength{\hintscolumnwidth}{3cm}                     % if you want to change the width of the column with the dates
+\AtBeginDocument{\setlength{\maketitlenamewidth}{1cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}
+
+
+%% personal data
+\firstname{Hanna\\ \\Schütt}
+\familyname{}
+\address{Neue Straße 6}{12103 Berlin}
+\mobile{0151 412339914}
+\email{hanna.schuett@gmx.net}
+\extrainfo{}
+\photo[90pt]{\images/hanna.jpg}
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage{hyperref}
+\hypersetup{
+  pdfauthor   = Hanna Schuett,
+  pdftitle    = Lebenslauf von Hanna Schütt
+  pdfsubject  = Lebenslauf von Hanna Schütt
+  pdfcreator  = \LaTeX,
+  pdfproducer = pdflatex,
+}
