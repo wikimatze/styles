@@ -1,7 +1,7 @@
 Here is a list of all my used LaTex styles I'm using in my projects.
 
 
-## Usage ##
+## Usage
 
 In you tex preamble you can use the styles in the following way:
 
@@ -13,15 +13,15 @@ In you tex preamble you can use the styles in the following way:
     \input{\home/style_proggen}
 
 
-## Contact ##
+## Contact
 
-Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimatze.de>.
+Feature request, bugs, questions, etc. can be send to <matthias@wikimatze.de>.
 
 
-## License ##
+## License
 
 This software is licensed under the [MIT license][mit].
 
-© 2011 Matthias Guenther <matthias.guenther@wikimatze.de>.
+© Matthias Günther <matthias@wikimatze.de>
 
 [mit]: http://en.wikipedia.org/wiki/MIT_License
