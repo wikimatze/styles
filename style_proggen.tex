@@ -36,6 +36,12 @@
 \usepackage{wrapfig}                                        % textumflossene Bilder
 \usepackage{caption}                                        % caption for images
 \usepackage[all]{xy}                                        % image numbering
+\usepackage{graphicx}       % for graphics
+  \usepackage{float}        % for positioning of figures
+  \DeclareGraphicsRule{.pdftex}{pdf}{.pdftex}{} % for xfig
+  \usepackage{wrapfig}      % textumflossene Bilder
+  \usepackage{caption}      % caption for images
+
 \renewcommand{\thefigure}{\arabic{section}.\arabic{figure}} % numbering for figure environments
 \usepackage{pdfpages}                                       % needed for the environments
 \usepackage{amsthm}                                         % needed for defining theorem environments
