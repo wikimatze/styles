@@ -1,11 +1,14 @@
 \newcounter{fig}
 
-\newenvironment{liste}{\begin{list}{-}
-{\usecounter{fig}%
-\setlength{\labelwidth}{0.5cm}\setlength{\leftmargin}{1.5cm}
-\setlength{\labelsep}{0.2cm}\setlength{\rightmargin}{0.5cm}
-\setlength{\parsep}{0.5ex plus0.2ex minus0.1ex}
-\setlength{\itemsep}{1ex plus0.2ex minus0.2ex} }}{\end{list}\ab}
+\newenvironment{liste}%
+  {\begin{list}{-}
+    {\usecounter{fig}%
+    \setlength{\labelwidth}{0.5cm}\setlength{\leftmargin}{1.5cm}
+    \setlength{\labelsep}{0.2cm}\setlength{\rightmargin}{0.5cm}
+    \setlength{\parsep}{0.5ex plus0.2ex minus0.1ex}
+    \setlength{\itemsep}{1ex plus0.2ex minus0.2ex} }}
+  {\end{list}\ab}
+
 
 \newenvironment{Beschreibungnormal}[1][\qquad]%
  {\begin{list}{}{%
@@ -14,12 +17,14 @@
    \setlength\leftmargin{\labelwidth+\labelsep}}}%
   {\end{list}}
 
+
 \newenvironment{Beschreibung}[1][\qquad]%
  {\begin{list}{}{%
    \renewcommand\makelabel[1]{\hfil\uline{##1 :}}%
    \settowidth\labelwidth{\makelabel{#1}}%
    \setlength\leftmargin{\labelwidth+\labelsep}}}%
   {\end{list}}
+
 
 \newenvironment{Beschreibungfett}[1][\qquad]%
  {\begin{list}{}{%
@@ -28,38 +33,48 @@
    \setlength\leftmargin{\labelwidth+\labelsep}}}%
   {\end{list}}
 
-\newenvironment{Frage}{\begin{list}{}
-{\usecounter{fig}%
-\setlength{\labelwidth}{0.5cm}\setlength{\leftmargin}{0.6cm}
-\setlength{\labelsep}{0.2cm}\setlength{\rightmargin}{0.5cm}
-\setlength{\parsep}{0.5ex plus0.2ex minus0.1ex}
-\setlength{\itemsep}{3ex plus0.2ex minus0.2ex} }}{\end{list}} 
+
+\newenvironment{Frage}%
+  {\begin{list}{}
+    {\usecounter{fig}%
+    \setlength{\labelwidth}{0.5cm}\setlength{\leftmargin}{0.6cm}
+    \setlength{\labelsep}{0.2cm}\setlength{\rightmargin}{0.5cm}
+    \setlength{\parsep}{0.5ex plus0.2ex minus0.1ex}
+    \setlength{\itemsep}{3ex plus0.2ex minus0.2ex} }}
+  {\end{list}}
 
 
-\newenvironment{margin}{\begin{list}{}
-{\usecounter{fig}%
-\setlength{\labelwidth}{0.5cm}\setlength{\leftmargin}{0.6cm}
-\setlength{\labelsep}{0.2cm}\setlength{\rightmargin}{0.5cm}
-\setlength{\parsep}{0.5ex plus0.2ex minus0.1ex}
-\setlength{\itemsep}{1ex plus0.2ex minus0.2ex} }}{\end{list}}
+\newenvironment{margin}%
+  {\begin{list}{}
+    {\usecounter{fig}%
+    \setlength{\labelwidth}{0.5cm}\setlength{\leftmargin}{0.6cm}
+    \setlength{\labelsep}{0.2cm}\setlength{\rightmargin}{0.5cm}
+    \setlength{\parsep}{0.5ex plus0.2ex minus0.1ex}
+    \setlength{\itemsep}{1ex plus0.2ex minus0.2ex} }}
+  {\end{list}}
 
 
-\newenvironment{point}{\begin{list}{$\cdot$}
-{\usecounter{fig}%
-\setlength{\labelwidth}{0.5cm}\setlength{\leftmargin}{1.0cm}
-\setlength{\labelsep}{0.2cm}\setlength{\rightmargin}{0.5cm}
-\setlength{\parsep}{0.5ex plus0.2ex minus0.1ex}
-\setlength{\itemsep}{1ex plus0.2ex minus0.2ex} }}{\end{list}} 
+\newenvironment{point}%
+  {\begin{list}{$\cdot$}
+    {\usecounter{fig}%
+    \setlength{\labelwidth}{0.5cm}\setlength{\leftmargin}{1.0cm}
+    \setlength{\labelsep}{0.2cm}\setlength{\rightmargin}{0.5cm}
+    \setlength{\parsep}{0.5ex plus0.2ex minus0.1ex}
+    \setlength{\itemsep}{1ex plus0.2ex minus0.2ex} }}
+  {\end{list}}
 
 
-\newenvironment{bull}{\begin{list}{$\cdot$)}
-{\usecounter{fig}%
-\setlength{\labelwidth}{0.5cm}\setlength{\leftmargin}{1.0cm}
-\setlength{\labelsep}{0.2cm}\setlength{\rightmargin}{0.5cm}
-\setlength{\parsep}{0.5ex plus0.2ex minus0.1ex}
-\setlength{\itemsep}{1ex plus0.2ex minus0.2ex} }}{\end{list}} 
+\newenvironment{bull}%
+  {\begin{list}{$\cdot$)}
+    {\usecounter{fig}%
+    \setlength{\labelwidth}{0.5cm}\setlength{\leftmargin}{1.0cm}
+    \setlength{\labelsep}{0.2cm}\setlength{\rightmargin}{0.5cm}
+    \setlength{\parsep}{0.5ex plus0.2ex minus0.1ex}
+    \setlength{\itemsep}{1ex plus0.2ex minus0.2ex} }}
+  {\end{list}}
 
 
-\newenvironment{shadowminipage}
+\newenvironment{shadowminipage}%
  {\begin{Sbox}\begin{minipage}{.95\columnwidth}}
  {\end{minipage}\end{Sbox}\shadowbox{\TheSbox}}
+
